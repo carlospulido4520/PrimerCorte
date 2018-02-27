@@ -7,18 +7,19 @@ import android.widget.Button
 
 class MainActivity : Activity() {
 
+
+     lateinit var botonutb :Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val botonutb = findViewById<Button>(R.id.botoncito)
+
+        botonutb = findViewById(R.id.botoncito)
         botonutb.setOnClickListener{
             val vinculo = Intent(this,Main2Activity::class.java)
             startActivity(vinculo)
 
             }
-
-
 
     }
 }
